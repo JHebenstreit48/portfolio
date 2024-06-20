@@ -40,7 +40,7 @@ header {
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
-  background-color: #070359;
+  background-color: rgba(49, 52, 61, 1);;
   box-shadow: 0 5px 35px rgba(146, 204, 206, 0.4);
 }
 
@@ -173,7 +173,7 @@ main {
 }
 
 /* feature first portfolio item */
-.flex-item:first-child, #home {
+.flex-item:first-child {
     min-height: 400px;
     flex-basis: 100%;
 }
@@ -220,10 +220,10 @@ main {
 }
 
 /* portfolio project images */
-#home {
+
+#home {  
   background-image: url("../images/home-page.png");
   background-size: cover;
-  
 }
 
 #characters {
@@ -246,10 +246,50 @@ main {
   background-size: cover;
 }
 
-/* media queries */
+img { 
+  display: none;
+}
 
 /* TODO: add media query for a max-width of 980px */
-
-
+/* media queries */
+@media screen and (max-width: 980px) {
+   .flex-container, address {
+    flex-direction: column;
+  }
+}
 
 /* TODO: add media query for a max-width of 768px */
+@media screen and (max-width: 768px) {
+  header {
+   flex-direction: column;
+   flex-wrap: wrap;
+   justify-content: center;
+ }
+ .hero-banner {
+    align-items: bottom;
+    text-align: center;
+}
+  nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+  #work {
+    align-items: center;
+}
+  .page-section {
+    flex-direction: column;
+}
+  .page-section > h2 {
+    text-align:left;
+    border-right: 0;
+    border-bottom: 4px solid var(--primary);
+}
+  .flex-item:first-child {
+    min-height: 150px;
+    flex-basis: 100%;
+}
+  .contact address {
+    justify-content: space-around;
+}
+}
