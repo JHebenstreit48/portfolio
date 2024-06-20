@@ -265,9 +265,10 @@ img {
    flex-wrap: wrap;
    justify-content: center;
  }
- .hero-banner {
-    align-items: bottom;
-    text-align: center;
+ .hero-banner h2 {
+    display: inline;
+    align-items: center;
+    justify-content: flex-end;
 }
   nav {
     display: flex;
@@ -290,6 +291,6 @@ img {
     flex-basis: 100%;
 }
   .contact address {
-    justify-content: space-around;
+    height: 100%;
 }
 }
