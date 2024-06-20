@@ -173,7 +173,7 @@ main {
 }
 
 /* feature first portfolio item */
-.flex-item:first-child {
+.flex-item:first-child, #home {
     min-height: 400px;
     flex-basis: 100%;
 }
@@ -220,12 +220,36 @@ main {
 }
 
 /* portfolio project images */
-div #home {
-  background-image: url('home-page.png');
+#home {
+  background-image: url("../images/home-page.png");
+  background-size: cover;
+  
+}
+
+#characters {
+  background-image: url("../images/characters-page.png");
+  background-size: cover;
+}
+
+#movies {
+  background-image: url("../images/movies-page.png");
+  background-size: cover;
+}
+
+#project-4 {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJk34jZ1mm6Pm3EqKFyccin2gIfWL3CYuNXQ&s");
+  background-size: cover;
+}
+
+#project-5 {
+  background-image: url("https://specials-images.forbesimg.com/imageserve/646f4ee03337ec9d1503a6f8/cayde3/960x0.png?fit=scale");
+  background-size: cover;
 }
 
 /* media queries */
 
 /* TODO: add media query for a max-width of 980px */
+
+
 
 /* TODO: add media query for a max-width of 768px */
