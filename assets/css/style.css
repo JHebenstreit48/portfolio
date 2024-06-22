@@ -82,7 +82,7 @@ nav a:last-child {
 }
 
 main {
-  margin-top: 20px;
+  /* margin-top: 20px; */
   margin-bottom: 45px;
 }
 
@@ -96,9 +96,9 @@ main {
   color: var(--light);
   padding: 2% 6%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: flex-end;
-  text-align: right;
+  text-align: center;
 }
 
 .hero-banner div {
@@ -291,6 +291,7 @@ img {
     flex-basis: 100%;
 }
   .contact address {
+    margin-top: 25px;
     height: 100%;
 }
 }
